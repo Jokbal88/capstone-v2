@@ -44,6 +44,9 @@
         <ul>
           {% if user.is_superuser or user.is_staff %}
           <li>
+            <a href="{% url 'main:admin_dashboard' %}">Dashboard</a>
+          </li>
+          <li>
             <a href="{% url 'medical:patient_profile' %}">Patient Profile</a>
           </li>
           <li><a href="{% url 'medical:viewrequest' %}">View Requests</a></li>
